@@ -30,8 +30,8 @@ int main()
         int len = sizeof(equation)/sizeof(char);
         bit_equation[i]=0;
         //is num => aa is num; abcde ae is num
-        is_num |=pow(equation[i][0]-'a');
-        is_num |=pow(equation[i][len-1]-'a');
+        is_num |=pow(equation[i][0]-'a');//head
+        is_num |=pow(equation[i][len-1]-'a');//end
         bit_equation[i] |= pow(equation[i][0]-'a');
         for (int j = 1; j < len; j++)
         {
